@@ -14,10 +14,5 @@
     {
         "folder_name" : "netflix_directors",
         "file_name" : "netflix_directors.csv"
-    },
-
-    {
-        "folder_name" : "netflix_titles",
-        "file_name" : "netflix_titles.csv"
     }
 ]
