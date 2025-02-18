@@ -16,6 +16,10 @@
    - [Development and Production Notebooks Overview](#development-and-production)
    - [Development Notebook](#development-notebook)
    - [Production Notebook](#production-notebook)
+  
+## Data Architecture <a name="data-architecture"></a>
+
+<img src="https://github.com/davidgonzalez95/End-to-End-Data-Engineering-on-Azure-Project/blob/main/Pictures/Architecture_Project_03.png" alt="image" width="550" height="auto">
 6. [Azure Synapse Analytics (Serving)](#azure-synapse-analytics)
    - [Objective](#objective-synapse)
    - [Steps](#steps-synapse)
