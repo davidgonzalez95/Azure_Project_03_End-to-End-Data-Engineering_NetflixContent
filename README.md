@@ -91,7 +91,7 @@
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_validation_activity.png" alt="image" width="250" height="auto">
      
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_validation.png" alt="image" width="600" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_validation.png" alt="image" width="750" height="auto">
 
   - **PL_Extract_Data results:**
 
