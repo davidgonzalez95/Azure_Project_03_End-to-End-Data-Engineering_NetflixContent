@@ -5,7 +5,7 @@
 1. [Project Description](#project-description)
 2. [Technical Components](#technical-components)
 3. [Data Architecture](#data-architecture)
-4. [Azure Data Factory (Ingestion and Orchestration)](#azure-data-factory)
+4. [Azure Data Factory (Ingestion)](#azure-data-factory)
    - [Objective](#objective-adf)
    - [Pipeline Architecture](#pipeline-architecture)
    - [1- PL_Extract_Raw_Data](#pl_extract_raw_data)
