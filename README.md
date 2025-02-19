@@ -26,16 +26,16 @@
 
 ## Project Description
 
-<p align="justify">This project focuses on building a comprehensive, <b>end-to-end Azure Data Engineering solution</b> that seamlessly integrates data ingestion, transformation, and analytics. It is designed to follow the principles of the <b>Medallion Architecture</b>, ensuring a structured and scalable approach to data processing. By implementing this architecture, the solution facilitates an efficient and organized data flow, transitioning from raw ingestion to progressively refined and enriched datasets. These optimized datasets will ultimately support advanced analytics and reporting, enabling stakeholders to derive meaningful insights and make data-driven decisions with confidence. 
+<p align="justify">This project focuses on building a comprehensive, <b>end-to-end Azure Data Engineering solution</b> that seamlessly <b>integrates streaming and batch data ingestion, transformation, and analytics</b>. It follows the principles of the <b>Medallion Architecture</b>, ensuring a <b>structured and scalable approach</b> to data processing. By implementing this architecture, the solution facilitates an efficient and organized data flow, transitioning from raw ingestion to progressively refined and enriched datasets. These optimized datasets will ultimately support <b>real-time and batch analytics</b>, enabling stakeholders to derive meaningful insights and make <b>data-driven decisions with confidence</b>.
 </p>
 
 ## Technical Components <a name="technical-components"></a>
  
  - **GitHub:** Data source.
  - **Azure Data Lake:** Centralized storage for transformed data.
- - **Azure Data Factory (ADF):** Data integration and orchestration platform.
- - **Databricks:** Data transformation.
- - **Azure Synapse Analytics:** Data analysis.
+ - **Azure Data Factory (ADF):** Data ingestion.
+ - **Databricks with Delta Live Tables:** Data transformation with **scalable processing** capabilities, enabling **real-time data processing** and automatic management of both **batch and streaming workloads** through Delta Live Tables.
+ - **Azure Synapse Analytics:** Data warehouse.
  - **Power BI:** Visualization and reporting.
 
 ## Data Architecture <a name="data-architecture"></a>
