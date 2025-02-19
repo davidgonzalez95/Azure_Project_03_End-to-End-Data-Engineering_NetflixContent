@@ -36,7 +36,7 @@
  - **Azure Data Factory (ADF):** Data ingestion.
  - **Databricks with Delta Live Tables:** Data transformation with **scalable processing** capabilities, enabling **real-time data processing** and automatic management of both **batch and streaming workloads** through Delta Live Tables.
  - **Azure Synapse Analytics:** Data warehouse.
- - **Power BI:** Visualization and reporting.
+ - **Power BI:** Reporting.
 
 ## Data Architecture <a name="data-architecture"></a>
 
