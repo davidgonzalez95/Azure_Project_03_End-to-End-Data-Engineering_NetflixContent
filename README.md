@@ -57,11 +57,11 @@
     
      **1- Creation of source connection:**
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_copy_source.png" alt="image" width="500" height="auto"> 
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_copy_source.png" alt="image" width="550" height="auto"> 
     
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_copy_source_inside_0.png" alt="image" width="500" height="auto">    
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_copy_source_inside_0.png" alt="image" width="550" height="auto">    
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_copy_source_inside_1.png" alt="image" width="500" height="auto">    
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_copy_source_inside_1.png" alt="image" width="450" height="auto">    
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_copy_source_inside_2.png" alt="image" width="500" height="auto">    
 
