@@ -11,7 +11,6 @@
    - [1- PL_Extract_Data](#pl_extract_data)
 5. [Azure Databricks (Transformation)](#azure-databricks)
    - [Objective](#objective-databricks)
-   - [Considerations](#considerations)
    - [Development and Production Notebooks Overview](#development-and-production)
    - [Development Notebook](#development-notebook)
    - [Production Notebook](#production-notebook)
@@ -98,3 +97,10 @@
      **Bronze Folder:**
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_bronze.png" alt="image" width="450" height="auto">
+
+## Azure Databricks (Ingestion) <a name="azure-databricks"></a>
+
+### Objective: <a name="objective-databricks"></a>
+<p align="justify">The <b>00-raw container</b> will be constantly loading new Netflix titles files. To achieve this, an <b>Incremental Data Loading using AutoLoader</b> will be implemented, creating a <b>checkpoint</b> to track which files have been loaded and which have not. The <b>checkpoint</b> is stored in the <b>silver layer</b> because it reflects the <b>processed state of the data</b>, meaning the progress in the transformation and cleaning of the data. Therefore, it is more useful to track the progress of the data when they have been transformed into an <b>intermediate state</b>.</p>
+
+<p align="justify">The following notebook involves <b>reading and writing data</b> in a <b>data stream</b> using Apache Spark, specifically to work with <b>CSV files</b> stored in an <b>Azure Data Lake Storage (ADLS)</b>.</p>
