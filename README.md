@@ -40,7 +40,7 @@
 
 ## Data Architecture <a name="data-architecture"></a>
 
-<img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixContent/blob/main/Pictures/Architecture_Project_03.png" alt="image" width="550" height="auto">
+<img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Architecture_Project_03.png" alt="image" width="550" height="auto">
 
 ## Azure Data Factory (Ingestion) <a name="azure-data-factory"></a>
 ### Objective <a name="objective-adf"></a>
