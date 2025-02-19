@@ -34,7 +34,7 @@
  - **GitHub:** Data source.
  - **Azure Data Lake:** Centralized storage for transformed data.
  - **Azure Data Factory (ADF):** Data ingestion.
- - **Databricks with Delta Live Tables:** Data transformation with **scalable processing** capabilities, enabling **real-time data processing** and automatic management of both **batch and streaming workloads** through Delta Live Tables.
+ - **Databricks with Delta Live Tables:** Scalable data transformation with real-time processing and automated batch/streaming management.
  - **Azure Synapse Analytics:** Data warehouse.
  - **Power BI:** Reporting.
 
