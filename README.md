@@ -89,7 +89,7 @@
 
   - **Creation of Validation Activity:** (Check if the title folder exist in 00-raw folder)
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_validation_activity.png" alt="image" width="480" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_validation_activity.png" alt="image" width="300" height="auto">
      
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Azure_Data_Factory/PL_Extract_Data_validation.png" alt="image" width="480" height="auto">
 
