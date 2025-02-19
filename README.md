@@ -76,7 +76,7 @@
   - **Creation of a parameter inside of the pipeline:**
     
      **1- Create a JSON file:** It is used a JSON to create dynamic parameters that automate the extraction and loading of data. The structure of the JSON is broken down below:
-       - **folder_name:** Target folder in the ADLS Gen2 bronze layer.  
+       - **folder_name:** Target folder.  
        - **file_name:** Target file name and format for source and sink.
 
          Then it is uploaded it into our Data Lake in the parameters folder. [Format of JSON](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Dynamic_Pipeline.json)
