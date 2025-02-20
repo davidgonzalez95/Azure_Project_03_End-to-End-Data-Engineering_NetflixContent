@@ -9,18 +9,9 @@
    - [Objective](#objective-adf)
    - [Pipeline Architecture](#pipeline-architecture)
    - [1- PL_Extract_Data](#pl_extract_data)
-5. [Azure Databricks (Transformation)](#azure-databricks)
-   - [Objective](#objective-databricks)
-   - [Development and Production Notebooks Overview](#development-and-production)
-   - [Development Notebook](#development-notebook)
-   - [Production Notebook](#production-notebook)
-6. [Azure Synapse Analytics (Serving)](#azure-synapse-analytics)
-   - [Objective](#objective-synapse)
-   - [Steps](#steps-synapse)
-7. [Power BI (Visualization)](#power-bi)
-   - [Objective](#objective-powerbi)
-   - [Steps](#steps-powerbi)
-   - [Visualizations](#visualizations)
+5. [Azure Databricks](#azure-databricks)
+   - [Unity Catalog](#unity-catalog-databricks)
+   - [Ingestion](#ingestion-databricks)
 
 ## Project Description
 
@@ -99,7 +90,7 @@
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_bronze.png" alt="image" width="450" height="auto">
 
 ## Azure Databricks <a name="azure-databricks"></a>
-### Unity Catalog - Objective: <a name="objective-databricks"></a>
+### Unity Catalog - Objective: <a name="unity-catalog-databricks"></a>
 <p align="justify">To ensure secure and efficient data governance, <b>Unity Catalog</b> is utilized for managing credentials and access controls across different data layers. Unity Catalog provides a centralized approach to defining permissions, enabling fine-grained access control for users, groups, and service principals. Through its integration with cloud identity providers, it allows organizations to establish secure authentication mechanisms and enforce role-based access (RBAC). Additionally, Unity Catalog simplifies credential management by enabling secure connections to storage accounts, ensuring that only authorized entities can read or write data while maintaining compliance with enterprise security policies.</p>
 
 #### **Steps:**
@@ -126,7 +117,7 @@
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Unity_Catalog/Access_databricks_checkpoint_external_table.png" alt="image" width="480" height="auto">
 
-### Ingestion - Objective: <a name="objective-databricks"></a>
+### Ingestion - Objective: <a name="ingestion-databricks"></a>
 <p align="justify">The <b>00-raw container</b> will be constantly loading new Netflix titles files. To achieve this, an <b>Incremental Data Loading using AutoLoader</b> will be implemented, creating a <b>checkpoint</b> to track which files have been loaded and which have not. The <b>checkpoint</b> is stored in a <b>dedicated container separate from the data layers</b>b> to ensure data consistency and avoid unintended deletions due to lifecycle policies. This setup guarantees reliable tracking of processed files without interfering with the raw, silver, or gold layers, <b>as recommended by</b> <a href="https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/production" target="_blank">Microsoft's best practices</a>.</p>
 
 <p align="justify">The following notebook involves <b>reading and writing data</b> in a <b>data stream</b> using Apache Spark, specifically to work with <b>CSV files</b> stored in an <b>Azure Data Lake Storage (ADLS)</b>.</p>
@@ -139,6 +130,6 @@
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_bronze_with_titles.png" alt="image" width="450" height="auto">
 
-     **Silver Folder:**
+     **Checkpoint-state Folder:**
     
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_checkpoint-state.png" alt="image" width="450" height="auto">
