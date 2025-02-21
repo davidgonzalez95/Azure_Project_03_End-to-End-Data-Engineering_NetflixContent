@@ -120,6 +120,26 @@
 ### Ingestion - Objective: <a name="ingestion-databricks"></a>
 <p align="justify">The <b>00-raw container</b> will be constantly loading new Netflix titles files. To achieve this, an <b>Incremental Data Loading using AutoLoader</b> will be implemented, creating a <b>checkpoint</b> to track which files have been loaded and which have not. The <b>checkpoint</b> is stored in a <b>dedicated container separate from the data layers</b> to ensure data consistency and avoid unintended deletions due to lifecycle policies. This setup guarantees reliable tracking of processed files without interfering with the raw, silver, or gold layers, <b>as recommended by</b> <a href="https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/production" target="_blank">Microsoft's best practices</a>.</p>
 
+<p align="justify">After performing checks on the average size of the files to be loaded, a duration of 2 minutes has been set for the process. Subsequently, a workflow will be created along with its respective trigger to automate and manage the data loading process efficiently.</p>
+
+#### Steps:
+
+  - **It tests how much time is needed to process a file**
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_01_test.png" alt="image" width="450" height="auto">
+    
+  - **Creation of a workflow**
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_01.png" alt="image" width="450" height="auto">
+    
+  - **Creation of a trigger**
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_01_schedule.png" alt="image" width="450" height="auto">
+    
+  - **Results**
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_01_results.png" alt="image" width="450" height="auto">
+
 <p align="justify">The following notebook involves <b>reading and writing data</b> in a <b>data stream</b> using Apache Spark, specifically to work with <b>CSV files</b> stored in an <b>Azure Data Lake Storage (ADLS)</b>.</p>
 
 [01_Bronze_AutoLoader](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/01_Bronze_AutoLoader.ipynb)
