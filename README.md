@@ -184,8 +184,54 @@ The **silver layer** has been implemented in 2 independent workflows:
   
   - **Workflow Result:**
 
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_schema.png" alt="image" width="600" height="auto">
+
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_results.png" alt="image" width="600" height="auto">
 
   - **Storage results (Silver Folder):**
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_silver.png" alt="image" width="450" height="auto">
+
+**2-Workflow:** In this case, an independent workflow has been created for the title files due to their incremental loading, and the reference notebooks are as follows:
+
+[02_03_Silver_LookUp](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_03_Silver_LookUp.ipynb)
+
+[02_04_Silver_forEach](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_04_Silver_forEach.ipynb)
+
+[02_05_Silver_False_Notebook](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_05_Silver_False_Notebook.ipynb)
+
+#### Steps:
+
+  - **Creation of LookUp_Weekday task by using** [02_03_Silver_LookUp](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_03_Silver_LookUp.ipynb)
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_Lookup_Weekday.png" alt="image" width="350" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_Lookup_Weekday_settings.png" alt="image" width="700" height="auto">
+
+  - **Creation of ifCondition task:**
+    
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_if_Week_Day.png" alt="image" width="350" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_if_Week_Day_settings.png" alt="image" width="700" height="auto">
+    
+  - **Creation of a Silver Master task  by using** [02_04_Silver_forEach](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_04_Silver_forEach.ipynb)
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_Silver_Master_Data.png" alt="image" width="350" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_Silver_Master_Data_settings.png" alt="image" width="700" height="auto">
+
+   - **Creation of a FalseNotebook task  by using** [02_04_Silver_forEach](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_04_Silver_forEach.ipynb)
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_False_Notebook.png" alt="image" width="350" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_False_Notebook_settings.png" alt="image" width="700" height="auto">
+  
+  - **Workflow Result:**
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_Silver_schema.png" alt="image" width="600" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_03_Silver_results.png" alt="image" width="600" height="auto">
+
+  - **Storage results (Silver Folder):**
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_silver_with_titles.png" alt="image" width="450" height="auto">
