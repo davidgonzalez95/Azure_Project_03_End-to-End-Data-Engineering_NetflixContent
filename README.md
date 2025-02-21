@@ -138,7 +138,7 @@
     
   - **Results**
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_01_results.png" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_01_results.png" alt="image" width="600" height="auto">
 
 <p align="justify">The following notebook involves <b>reading and writing data</b> in a <b>data stream</b> using Apache Spark, specifically to work with <b>CSV files</b> stored in an <b>Azure Data Lake Storage (ADLS)</b>.</p>
 
