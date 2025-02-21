@@ -168,19 +168,19 @@ The **silver layer** has been implemented in 2 independent workflows:
 
   - **Creation of LookUp task by using** [02_01_Silver_LookUp](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_01_Silver_LookUp.ipynb)
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_01_LookUp.png" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_01_LookUp.png" alt="image" width="200" height="auto">
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_01_LookUp_Settings.png" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_01_LookUp_Settings.png" alt="image" width="500" height="auto">
     
   - **Creation of forEach task  by using** [02_02_Silver_forEach](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/02_02_Silver_forEach.ipynb)
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach.png" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach.png" alt="image" width="200" height="auto">
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach_Settings_01.png" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach_Settings_01.png" alt="image" width="500" height="auto">
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach_Settings_02.png" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach_Settings_02.png" alt="image" width="500" height="auto">
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach_Loop.png" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/Workflows/databricks_workflow_02_Silver_02_ForEach_Loop.png" alt="image" width="500" height="auto">
   
   - **Workflow Result:**
 
@@ -188,4 +188,4 @@ The **silver layer** has been implemented in 2 independent workflows:
 
   - **Storage results (Silver Folder):**
 
-     <img src="(https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_silver.png)" alt="image" width="450" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_silver.png" alt="image" width="450" height="auto">
