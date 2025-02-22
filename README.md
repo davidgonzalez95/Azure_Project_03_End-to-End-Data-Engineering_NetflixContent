@@ -14,6 +14,7 @@
    - [Unity Catalog](#unity-catalog-databricks)
    - [Ingestion](#ingestion-databricks)
    - [Transformations](#transformations-databricks)
+   - [Delta Live Tables](#dlt-databricks)
 
 ## Project Description
 
@@ -93,7 +94,7 @@
 
 ## Azure Databricks <a name="azure-databricks"></a>
 
-### Architecture
+### Architecture: <a name="architecture-databricks"></a>
 
 In this project, we have implemented a **Medallion Architecture (Bronze → Silver → Gold)** using **two different methodologies** to process the data:
 
@@ -253,3 +254,30 @@ The **silver layer** has been implemented in 2 independent workflows:
   - **Storage results (Silver Folder):**
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_silver_with_titles.png" alt="image" width="450" height="auto">
+
+### Delta Live tables - Objective: <a name="dlt-databricks"></a>
+Delta Live Tables (DLT) is a **declarative framework** in Databricks that simplifies the development, execution, and monitoring of **ETL pipelines**. Unlike traditional approaches, DLT **automates pipeline orchestration**, manages dependencies, and ensures **data quality and reliability**.
+
+#### Steps:
+
+  - **Create a DLT_notebook:** [03_Gold_DLT](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/Databricks/03_Gold_DLT.ipynb)
+
+  - **Create a DLTPipeline:** 
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_pipeline_1.png" alt="image" width="700" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_pipeline_2.png" alt="image" width="700" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_pipeline_3.png" alt="image" width="700" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_pipeline_4.png" alt="image" width="700" height="auto">
+
+  - **DLT Pipeline Result:**
+    
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_1.png" alt="image" width="700" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_2.png" alt="image" width="700" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_3.png" alt="image" width="700" height="auto">
+
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_4.png" alt="image" width="700" height="auto">
