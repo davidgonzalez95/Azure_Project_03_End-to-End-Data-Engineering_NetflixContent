@@ -15,8 +15,10 @@
    - [Ingestion](#ingestion-databricks)
    - [Transformations](#transformations-databricks)
    - [Delta Live Tables](#dlt-databricks)
+6. [Power Bi and Azure Synapse](#power-bi)
+   - [Objective](#objective-powerbi)
 
-## Project Description
+## Project Description <a name="project-description"></a>
 
 <p align="justify">This project focuses on building a comprehensive, <b>end-to-end Azure Data Engineering solution</b> that seamlessly <b>integrates streaming and batch data ingestion, transformation, and analytics</b>. It follows the principles of the <b>Medallion Architecture</b>, ensuring a <b>structured and scalable approach</b> to data processing. By implementing this architecture, the solution facilitates an efficient and organized data flow, transitioning from raw ingestion to progressively refined and enriched datasets. These optimized datasets will ultimately support <b>real-time and batch analytics</b>, enabling stakeholders to derive meaningful insights and make <b>data-driven decisions with confidence</b>.
 </p>
@@ -281,3 +283,17 @@ Delta Live Tables (DLT) is a **declarative framework** in Databricks that simpli
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_3.png" alt="image" width="700" height="auto">
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_4.png" alt="image" width="700" height="auto">
+
+## Power Bi and Azure Synapse <a name="power-bi"></a>
+### Objective: <a name="objective-powerbi"></a>
+Finally, after all processing steps, the Gold layer data is exported to **Power BI** or **Azure Synapse** for report generation and visualizations. The connection with these two tools is made directly from **Databricks**.
+
+#### Steps:
+
+  - **Create a Power BI connection:** [Power_BI](https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Codes/databricks-NetflixCluster.pbids)
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/databricks_power_bi.png" alt="image" width="700" height="auto">
+     
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/databricks_power_bi_settings.png" alt="image" width="700" height="auto">
+
+
+
