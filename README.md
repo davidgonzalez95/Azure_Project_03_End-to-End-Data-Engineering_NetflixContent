@@ -274,9 +274,9 @@ Delta Live Tables (DLT) is a **declarative framework** in Databricks that simpli
 
   - **DLT Pipeline Result:**
     
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_1.png" alt="image" width="700" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_1.png" alt="image" width="350" height="auto">
 
-     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_2.png" alt="image" width="700" height="auto">
+     <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_2.png" alt="image" width="350" height="auto">
 
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/Databricks/DeltaLiveTables/databricks_deltalivetables_results_3.png" alt="image" width="700" height="auto">
 
