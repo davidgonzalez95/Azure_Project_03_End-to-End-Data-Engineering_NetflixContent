@@ -10,6 +10,7 @@
    - [Pipeline Architecture](#pipeline-architecture)
    - [1- PL_Extract_Data](#pl_extract_data)
 5. [Azure Databricks](#azure-databricks)
+   - [Archicteture](#architecture-databricks)
    - [Unity Catalog](#unity-catalog-databricks)
    - [Ingestion](#ingestion-databricks)
    - [Transformations](#transformations-databricks)
@@ -91,6 +92,23 @@
      <img src="https://github.com/davidgonzalez95/Azure_Project_03_End-to-End-Data-Engineering_NetflixDatastreaming/blob/main/Pictures/storage_bronze.png" alt="image" width="450" height="auto">
 
 ## Azure Databricks <a name="azure-databricks"></a>
+
+### Architecture
+
+In this project, we have implemented a **Medallion Architecture (Bronze → Silver → Gold)** using **two different methodologies** to process the data:
+
+- **Workflows** for the **Bronze and Silver** layers  
+- **Delta Live Tables (DLT)** for the **Gold** layer  
+
+Although this project demonstrates both methodologies and allows for a comparison of their advantages and differences, **in a real-world scenario, the ideal approach would be to implement DLT across all layers (Bronze, Silver, and Gold)** because:  
+
+✔ **Automates execution** and eliminates the need to manually manage dependencies.  
+✔ **Natively supports both streaming and batch processing** within the same structure.  
+✔ **Includes built-in data quality rules** (`EXPECT`), removing the need for external validations.  
+✔ **Integrates with Unity Catalog** for better governance and security.  
+✔ **Automatically optimizes performance** with `AUTO OPTIMIZE` and `AUTO COMPACT`.  
+
+
 ### Unity Catalog - Objective: <a name="unity-catalog-databricks"></a>
 <p align="justify">To ensure secure and efficient data governance, <b>Unity Catalog</b> is utilized for managing credentials and access controls across different data layers. Unity Catalog provides a centralized approach to defining permissions, enabling fine-grained access control for users, groups, and service principals. Through its integration with cloud identity providers, it allows organizations to establish secure authentication mechanisms and enforce role-based access (RBAC). Additionally, Unity Catalog simplifies credential management by enabling secure connections to storage accounts, ensuring that only authorized entities can read or write data while maintaining compliance with enterprise security policies.</p>
 
